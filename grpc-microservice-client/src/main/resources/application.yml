@@ -1,0 +1,10 @@
+server:
+  port: 8888
+
+grpc:
+  client:
+    local-grpc-server:
+      address: 'static://127.0.0.1:12345'
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
