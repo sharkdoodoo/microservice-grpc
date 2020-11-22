@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class ClientService {
 
 
-    @GrpcClient("local-grpc-server")
+    @GrpcClient("cloud-grpc-server")
     private SimpleGrpc.SimpleBlockingStub stub;
 
     public String request(String name) {
